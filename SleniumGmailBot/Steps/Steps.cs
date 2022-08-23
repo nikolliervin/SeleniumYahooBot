@@ -1,4 +1,6 @@
-﻿namespace SleniumGmailBot.Steps
+﻿using OpenQA.Selenium;
+
+namespace SleniumGmailBot.Steps
 {
     public class Steps
     {
