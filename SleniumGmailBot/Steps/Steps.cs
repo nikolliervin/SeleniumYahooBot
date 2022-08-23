@@ -15,8 +15,8 @@ namespace SleniumGmailBot.Steps
 
         public void Login(IWebDriver driver)
         {
-            var username = ConfigurationManager.A.Get("username");
-            driver.FindElement(userName).SendKeys()
+            var username = ConfigurationManager.AppSettings.Get("username");
+            driver.FindElement(userName).SendKeys(username);
         }
     }
 }
