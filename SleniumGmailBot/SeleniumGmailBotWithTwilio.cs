@@ -5,17 +5,12 @@ namespace SleniumGmailBot
 {
     public class SeleniumGmailBotWithTwilio
     {
-        public readonly Steps.Steps steps;
-        public SeleniumGmailBotWithTwilio(Steps.Steps _steps)
-        {
-            steps = _steps;
-        }
 
-        void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             IWebDriver driver = new ChromeDriver();
-
+            Steps.Steps steps = new Steps.Steps();
             steps.LandOnGmail(driver, steps.URL);
 
 
