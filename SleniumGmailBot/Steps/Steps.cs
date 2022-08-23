@@ -18,7 +18,14 @@ namespace SleniumGmailBot.Steps
             var username = ConfigurationManager.AppSettings["username"];
             var password = ConfigurationManager.AppSettings["password"];
             driver.FindElement(userName).SendKeys(username);
+            driver.FindElement(nextButton).Click();
 
+
+
+        }
+
+        public void AuthenticateFromStackOverflowExchange(IWebDriver driver)
+        {
 
         }
     }
