@@ -10,5 +10,10 @@ namespace SleniumGmailBot.Steps
         {
             driver.Navigate().GoToUrl(url);
         }
+
+        public void Login(IWebDriver driver)
+        {
+
+        }
     }
 }
