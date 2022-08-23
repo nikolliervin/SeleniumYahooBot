@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using System.Configuration;
+
 
 namespace SleniumGmailBot.Steps
 {
@@ -13,7 +15,8 @@ namespace SleniumGmailBot.Steps
 
         public void Login(IWebDriver driver)
         {
-            driver.FindElement()
+            var username = ConfigurationManager.A.Get("username");
+            driver.FindElement(userName).SendKeys()
         }
     }
 }
