@@ -3,10 +3,10 @@ using OpenQA.Selenium.Chrome;
 
 namespace SleniumGmailBot
 {
-    public class SeleniumGmailBot
+    public class SeleniumGmailBotWithTwilio
     {
         private readonly Steps steps;
-        public SeleniumGmailBot(Steps _steps)
+        public SeleniumGmailBotWithTwilio(Steps _steps)
         {
             steps = _steps;
         }
