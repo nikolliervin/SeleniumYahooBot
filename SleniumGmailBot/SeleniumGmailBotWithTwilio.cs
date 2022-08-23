@@ -13,6 +13,7 @@ namespace SleniumGmailBot
             Steps.Steps steps = new Steps.Steps();
 
             steps.LandOnGmail(driver, steps.URL);
+            steps.Login(driver);
 
 
 
