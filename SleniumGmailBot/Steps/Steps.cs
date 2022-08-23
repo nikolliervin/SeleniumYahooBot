@@ -2,7 +2,7 @@
 
 namespace SleniumGmailBot.Steps
 {
-    public class Steps
+    public class Steps : WebElements.WebElements
     {
         public string URL = "https://gmail.com";
 
@@ -13,7 +13,7 @@ namespace SleniumGmailBot.Steps
 
         public void Login(IWebDriver driver)
         {
-
+            driver.FindElement()
         }
     }
 }
