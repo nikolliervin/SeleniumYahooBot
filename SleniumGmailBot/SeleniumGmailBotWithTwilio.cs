@@ -11,6 +11,7 @@ namespace SleniumGmailBot
 
             IWebDriver driver = new ChromeDriver();
             Steps.Steps steps = new Steps.Steps();
+
             steps.LandOnGmail(driver, steps.URL);
 
 
