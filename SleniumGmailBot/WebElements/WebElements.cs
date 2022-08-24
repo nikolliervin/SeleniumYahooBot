@@ -10,6 +10,8 @@ namespace SleniumGmailBot.WebElements
 
         public By LoginPasswordField => By.XPath("//*[@id='login-passwd']");
 
+        public By MailButton => By.XPath("//*[@id='ybarMailLink']");
+
 
     }
 }
