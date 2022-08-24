@@ -30,6 +30,7 @@ namespace SleniumYahooBot.Steps
         public void GoToMail(IWebDriver driver)
         {
             driver.FindElement(MailButton).Click();
+
         }
 
 

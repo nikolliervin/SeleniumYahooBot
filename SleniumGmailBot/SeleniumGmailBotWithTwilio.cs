@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace SleniumYahooBot
 {
-    public class SeleniumGmailBotWithTwilio
+    public class SeleniumYahooBotWithTwilio
     {
 
         public static void Main(string[] args)
