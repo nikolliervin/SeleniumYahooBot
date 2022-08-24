@@ -6,7 +6,7 @@ namespace SleniumYahooBot.Steps
 {
     public class Steps : WebElements
     {
-        public string URL = "https://gmail.com";
+        public string URL = ConfigurationManager.AppSettings["url"];
 
         public void LandOnYahoo(IWebDriver driver, string url)
         {
