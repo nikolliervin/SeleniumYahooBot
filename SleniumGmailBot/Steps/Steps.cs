@@ -17,9 +17,10 @@ namespace SleniumYahooBot.Steps
         {
             var username = ConfigurationManager.AppSettings["username"];
             var password = ConfigurationManager.AppSettings["password"];
-
-
-
+            driver.FindElement(LoginUsernameField).SendKeys(username);
+            driver.FindElement(LoginNextButton).Click();
+            driver.FindElement(LoginPasswordField).SendKeys(password);
+            driver.FindElement(LoginNextButton).Click();
 
         }
 

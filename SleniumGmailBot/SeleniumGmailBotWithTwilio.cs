@@ -13,9 +13,9 @@ namespace SleniumYahooBot
             Steps.Steps steps = new Steps.Steps();
 
             steps.LandOnYahoo(driver, steps.URL);
+            steps.Login(driver);
 
 
-            driver.Quit();
 
 
 
