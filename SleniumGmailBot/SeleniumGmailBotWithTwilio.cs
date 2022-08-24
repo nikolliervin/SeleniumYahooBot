@@ -12,8 +12,8 @@ namespace SleniumYahooBot
             IWebDriver driver = new ChromeDriver();
             Steps.Steps steps = new Steps.Steps();
 
-            steps.LandOnGmail(driver, steps.URL);
-            steps.AuthenticateFromStackOverflowExchange(driver);
+            steps.LandOnYahoo(driver, steps.URL);
+
 
             driver.Quit();
 
