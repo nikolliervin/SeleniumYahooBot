@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace SleniumGmailBot
+namespace SleniumYahooBot
 {
     public class SeleniumGmailBotWithTwilio
     {
@@ -13,7 +13,9 @@ namespace SleniumGmailBot
             Steps.Steps steps = new Steps.Steps();
 
             steps.LandOnGmail(driver, steps.URL);
-            steps.Login(driver);
+            steps.AuthenticateFromStackOverflowExchange(driver);
+
+            driver.Quit();
 
 
 
