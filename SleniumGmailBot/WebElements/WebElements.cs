@@ -12,6 +12,8 @@ namespace SleniumGmailBot.WebElements
 
         public By MailButton => By.XPath("//*[@id='ybarMailLink']");
 
+        public By YahooMails(int index) => By.XPath($"//*[@id='mail-app-component']/div/div/div/div[2]/div/div/div[3]/div/div[1]/ul/li[{index}]/a");
+
 
     }
 }

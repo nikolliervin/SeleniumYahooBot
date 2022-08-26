@@ -33,6 +33,12 @@ namespace SleniumYahooBot.Steps
 
         }
 
+        public string GetTheEmailOfIndex(IWebDriver driver, int index)
+        {
+            var email = driver.FindElement(YahooMails(index)).GetAttribute("aria-label");
+            return email;
+        }
+
 
     }
 }

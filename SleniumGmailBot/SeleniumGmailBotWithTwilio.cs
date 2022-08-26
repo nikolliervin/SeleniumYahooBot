@@ -15,7 +15,7 @@ namespace SleniumYahooBot
             steps.LandOnYahoo(driver, steps.URL);
             steps.Login(driver);
             steps.GoToMail(driver);
-
+            steps.GetTheEmailOfIndex(driver, 3);
 
 
 
