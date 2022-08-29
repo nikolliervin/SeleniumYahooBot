@@ -20,6 +20,8 @@ namespace SeleniumYahooBot
             IterateEmails iterate = new IterateEmails();
             TwilioConfig twilioConfig = new TwilioConfig(iterate);
 
+            var options = new ChromeOptions();
+            options.AddArgument("headless");
 
             steps.LandOnYahoo(driver, steps.URL);
             steps.Login(driver);
