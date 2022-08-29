@@ -33,7 +33,7 @@ namespace SleniumYahooBot
             for (int i = 0; i < emails.Count; i++)
             {
                 var message = MessageResource.Create(
-                body: $"You have missed the following Email:{emails[i]}",
+                body: $"*You have missed the following Email:*{emails[i]}",
                 from: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.TwilioPhoneNumber}"),
                 to: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.MyPhoneNumber}")
                 );
