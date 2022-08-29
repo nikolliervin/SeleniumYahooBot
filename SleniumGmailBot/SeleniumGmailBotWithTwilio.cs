@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
+using SleniumGmailBot.Twilio;
 using System.Collections.Generic;
 using Twilio.Rest.Api.V2010.Account;
 
@@ -15,6 +16,8 @@ namespace SleniumYahooBot
             IWebDriver driver = new ChromeDriver();
             Steps.Steps steps = new Steps.Steps();
             IterateEmails iterate = new IterateEmails();
+            TwilioConfig twilioConfig = new TwilioConfig(iterate);
+
 
             steps.LandOnYahoo(driver, steps.URL);
             steps.Login(driver);
@@ -27,8 +30,8 @@ namespace SleniumYahooBot
 
             var message = MessageResource.Create(
                 body: "Hello there!",
-                from: new Twilio.Types.PhoneNumber("whatsapp:+14155238886"),
-                to: new Twilio.Types.PhoneNumber("whatsapp:+15005550006")
+                from: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.TwilioPhoneNumber}"),
+                to: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.MyPhoneNumber}")
             );
 
 

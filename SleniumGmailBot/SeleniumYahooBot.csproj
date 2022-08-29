@@ -100,7 +100,7 @@
     <Compile Include="SeleniumGmailBotWithTwilio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\Steps.cs" />
-    <Compile Include="Twilio\Twilio.cs" />
+    <Compile Include="Twilio\TwilioConfig.cs" />
     <Compile Include="WebElements\WebElements.cs" />
   </ItemGroup>
   <ItemGroup>
