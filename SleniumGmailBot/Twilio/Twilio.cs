@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using Twilio;
 
 namespace SleniumGmailBot.Twilio
 {
@@ -14,7 +15,7 @@ namespace SleniumGmailBot.Twilio
 
         public void SendMessage()
         {
-
+            TwilioClient.Init("", "");
         }
 
     }

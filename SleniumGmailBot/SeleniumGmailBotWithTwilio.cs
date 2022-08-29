@@ -2,7 +2,6 @@
 using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
 using System.Collections.Generic;
-using Twilio;
 
 namespace SleniumYahooBot
 {
@@ -25,7 +24,6 @@ namespace SleniumYahooBot
             emails = iterate.IterateThroughEmails(driver);
 
 
-            TwilioClient.Init(accountSid, accountAuthToken);
 
 
 
