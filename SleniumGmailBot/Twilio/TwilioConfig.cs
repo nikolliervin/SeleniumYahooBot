@@ -15,10 +15,7 @@ namespace SleniumGmailBot.Twilio
 
         public string TwilioPhoneNumber = ConfigurationManager.AppSettings["TwilioPhoneNumber"];
         public string MyPhoneNumber = ConfigurationManager.AppSettings["MyPhoneNumber"];
-        public void SendMessage()
-        {
 
-        }
 
     }
 }

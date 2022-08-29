@@ -20,10 +20,7 @@ namespace SleniumGmailBot
 
         }
 
-        public List<string> EmailsCleanedUp(List<string> strings)
-        {
 
-        }
 
     }
 }

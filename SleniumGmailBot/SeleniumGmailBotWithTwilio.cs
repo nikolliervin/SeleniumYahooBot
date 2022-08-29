@@ -28,11 +28,19 @@ namespace SleniumYahooBot
             emails = iterate.IterateThroughEmails(driver);
 
 
-            var message = MessageResource.Create(
-                body: "Hello there!",
+            for (int i = 0; i < emails.Count; i++)
+            {
+                var message = MessageResource.Create(
+                body: $"You have missed the following Email:{emails[i]}",
                 from: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.TwilioPhoneNumber}"),
                 to: new Twilio.Types.PhoneNumber($"whatsapp:{twilioConfig.MyPhoneNumber}")
-            );
+                );
+            }
+
+
+
+
+
 
 
 
