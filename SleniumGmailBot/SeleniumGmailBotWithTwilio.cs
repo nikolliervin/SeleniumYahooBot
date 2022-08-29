@@ -21,8 +21,9 @@ namespace SleniumYahooBot
             steps.GetTheEmailOfIndex(driver, 3);
 
             List<string> emails = new List<string>();
-
             emails = iterate.IterateThroughEmails(driver);
+
+
 
 
 
