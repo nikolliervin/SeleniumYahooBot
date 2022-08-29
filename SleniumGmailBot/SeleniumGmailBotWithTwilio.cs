@@ -14,8 +14,8 @@ namespace SeleniumYahooBot
         public static void Main(string[] args)
         {
             var options = new ChromeOptions();
-            options.AddArgument("--headless");
-            options.AddArgument("start-maximized");
+            //options.AddArgument("--headless");
+            options.AddArgument("--start-maximized");
 
             ChromeDriver driver = new ChromeDriver(options);
             Steps steps = new Steps();
