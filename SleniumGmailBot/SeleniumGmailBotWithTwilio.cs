@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
 using SleniumGmailBot.Twilio;
 using SleniumYahooBot.Steps;
@@ -14,14 +13,16 @@ namespace SeleniumYahooBot
 
         public static void Main(string[] args)
         {
+            var options = new ChromeOptions();
+            options.AddArgument("--headless");
+            options.AddArgument("start-maximized");
 
-            IWebDriver driver = new ChromeDriver();
+            ChromeDriver driver = new ChromeDriver(options);
             Steps steps = new Steps();
             IterateEmails iterate = new IterateEmails();
             TwilioConfig twilioConfig = new TwilioConfig(iterate);
 
-            var options = new ChromeOptions();
-            options.AddArgument("headless");
+
 
             steps.LandOnYahoo(driver, steps.URL);
             steps.Login(driver);

@@ -29,6 +29,7 @@ namespace SleniumYahooBot.Steps
 
         public void GoToMail(IWebDriver driver)
         {
+            Thread.Sleep(1000);
             driver.FindElement(MailButton).Click();
 
         }
