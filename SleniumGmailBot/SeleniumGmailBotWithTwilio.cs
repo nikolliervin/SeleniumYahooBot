@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
 using SleniumGmailBot.Twilio;
 using System.Collections.Generic;
+using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
 namespace SleniumYahooBot
@@ -27,6 +28,7 @@ namespace SleniumYahooBot
             List<string> emails = new List<string>();
             emails = iterate.IterateThroughEmails(driver);
 
+            TwilioClient.Init(twilioConfig.accountSid, twilioConfig.accountAuthToken);
 
             for (int i = 0; i < emails.Count; i++)
             {
