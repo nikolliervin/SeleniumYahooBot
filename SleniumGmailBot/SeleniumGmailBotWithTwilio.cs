@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
 using System.Collections.Generic;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace SleniumYahooBot
 {
@@ -24,7 +25,11 @@ namespace SleniumYahooBot
             emails = iterate.IterateThroughEmails(driver);
 
 
-
+            var message = MessageResource.Create(
+                body: "Hello there!",
+                from: new Twilio.Types.PhoneNumber("whatsapp:+14155238886"),
+                to: new Twilio.Types.PhoneNumber("whatsapp:+15005550006")
+            );
 
 
 

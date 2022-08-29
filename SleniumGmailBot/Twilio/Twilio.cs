@@ -1,5 +1,5 @@
 ﻿using System.Configuration;
-using Twilio;
+
 
 namespace SleniumGmailBot.Twilio
 {
@@ -13,9 +13,11 @@ namespace SleniumGmailBot.Twilio
         string accountSid = ConfigurationManager.AppSettings["TwilioAccountSid"];
         string accountAuthToken = ConfigurationManager.AppSettings["TwilioAccountAuthToken"];
 
+        string TwilioPhoneNumber = ConfigurationManager.AppSettings["TwilioPhoneNumber"];
+        string MyPhoneNumber = ConfigurationManager.AppSettings["MyPhoneNumber"];
         public void SendMessage()
         {
-            TwilioClient.Init("", "");
+
         }
 
     }
