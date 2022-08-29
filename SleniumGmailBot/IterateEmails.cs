@@ -13,7 +13,7 @@ namespace SleniumGmailBot
 
             for (int i = 3; i <= 5; i++)
             {
-                emails.Add(driver.FindElement(YahooMails(i)).ToString());
+                emails.Add(driver.FindElement(YahooMails(i)).GetAttribute("aria-label"));
             }
 
             return emails;
