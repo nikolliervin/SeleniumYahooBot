@@ -2,11 +2,12 @@
 using OpenQA.Selenium.Chrome;
 using SleniumGmailBot;
 using SleniumGmailBot.Twilio;
+using SleniumYahooBot.Steps;
 using System.Collections.Generic;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
-namespace SleniumYahooBot
+namespace SeleniumYahooBot
 {
     public class SeleniumYahooBotWithTwilio
     {
@@ -15,7 +16,7 @@ namespace SleniumYahooBot
         {
 
             IWebDriver driver = new ChromeDriver();
-            Steps.Steps steps = new Steps.Steps();
+            Steps steps = new Steps();
             IterateEmails iterate = new IterateEmails();
             TwilioConfig twilioConfig = new TwilioConfig(iterate);
 
